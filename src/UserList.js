@@ -9,7 +9,10 @@ function UserList({ users }) {
   });
 
   return (
-    <table>
+    <div className="col-12 mb-3 p-3">
+    <h3>User List</h3>
+    <hr/>
+    <table className="table table-striped">
       <thead>
         <tr>
           <th>Name</th>
@@ -18,7 +21,8 @@ function UserList({ users }) {
       </thead>
       <tbody>{renderedUsers}</tbody>
     </table>
-  );
+    </div>
+);
 }
 
 export default UserList;
